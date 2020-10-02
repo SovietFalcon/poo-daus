@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Dados {
 
-    public static void main(String[] args) {
+    public static void dados() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -26,7 +26,6 @@ public class Dados {
         for (int i = 0; i < 11; i++) {
             System.out.println(i+2 + " : " + resultados[i]);
         }
-
 
     }
 
