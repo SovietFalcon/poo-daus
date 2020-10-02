@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Dados {
 
-    public static void dados() {
+    public static void iniciar() {
 
         Scanner scanner = new Scanner(System.in);
 

@@ -24,7 +24,7 @@ public class Menu {
                     break;
 
                 case 2:
-                    Dados.dados();
+                    Dados.iniciar();
                     break;
 
                 case 3:
