@@ -20,7 +20,7 @@ public class Menu {
 
             switch (sel) {
                 case 1:
-
+                    JocDaus.iniciar();
                     break;
 
                 case 2:
