@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public static void menu() {
+    JocDaus jocDaus = new JocDaus();
+
+    public void show() {
 
         Scanner scanner = new Scanner(System.in);
         int sel = 0;
@@ -20,7 +22,7 @@ public class Menu {
 
             switch (sel) {
                 case 1:
-                    JocDaus.iniciar();
+                    jocDaus.iniciar();
                     break;
 
                 case 2:

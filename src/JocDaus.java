@@ -2,7 +2,21 @@ import java.util.Scanner;
 
 public class JocDaus {
 
-    public static void iniciar() {
+
+    private Dau dado1;
+    private Dau dado2;
+    private Dau dado3;
+
+    public JocDaus() {
+        dado1 = new Dau(1);
+        dado2 = new Dau(2);
+        dado3 = new Dau(3);
+    }
+
+
+
+
+    public void iniciar() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -12,9 +26,9 @@ public class JocDaus {
         int ganadas = 0;
         int perdidas = 0;
 
-        Dau dado1 = new Dau(1);
-        Dau dado2 = new Dau(2);
-        Dau dado3 = new Dau(1);
+
+
+
 
         for (int i = 0; i < tiradas; i++) {
             dado1.tirar();
@@ -31,6 +45,7 @@ public class JocDaus {
 
         System.out.println("Has guanyat " + ganadas + " vegades.");
         System.out.println("Has perdut " + perdidas + " vegades.");
+        System.out.println("Total de partides: " + tiradas);
 
     }
 
