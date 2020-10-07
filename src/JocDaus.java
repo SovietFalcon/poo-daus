@@ -14,9 +14,7 @@ public class JocDaus {
     }
 
 
-
-
-    public void iniciar() {
+    public void jugar() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -25,9 +23,6 @@ public class JocDaus {
         int tiradas = scanner.nextInt();
         int ganadas = 0;
         int perdidas = 0;
-
-
-
 
 
         for (int i = 0; i < tiradas; i++) {
