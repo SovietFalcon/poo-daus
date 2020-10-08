@@ -3,16 +3,44 @@ import java.util.Scanner;
 public class JocDaus {
 
 
+    private int totalPartidas;
+    private int totalGanadas;
+    private int totalPerdidas;
+
     private Dau dado1;
     private Dau dado2;
     private Dau dado3;
+
+
+    public int getTotalPartidas() {
+        return totalPartidas;
+    }
+
+    public void setTotalPartidas(int totalPartidas) {
+        this.totalPartidas = totalPartidas;
+    }
+
+    public int getTotalGanadas() {
+        return totalGanadas;
+    }
+
+    public void setTotalGanadas(int totalGanadas) {
+        this.totalGanadas = totalGanadas;
+    }
+
+    public int getTotalPerdidas() {
+        return totalPerdidas;
+    }
+
+    public void setTotalPerdidas(int totalPerdidas) {
+        this.totalPerdidas = totalPerdidas;
+    }
 
     public JocDaus() {
         dado1 = new Dau(1);
         dado2 = new Dau(2);
         dado3 = new Dau(3);
     }
-
 
     public void jugar() {
 
@@ -38,9 +66,19 @@ public class JocDaus {
 
         }
 
+        setTotalPartidas(getTotalPartidas()+tiradas);
+        setTotalGanadas(getTotalGanadas()+ganadas);
+        setTotalPerdidas(getTotalPerdidas()+perdidas);
+
+
+
+
+
+
         System.out.println("Has guanyat " + ganadas + " vegades.");
         System.out.println("Has perdut " + perdidas + " vegades.");
-        System.out.println("Total de partides: " + tiradas);
+        System.out.println("Partides aquesta ronda: " + tiradas);
+        System.out.println("Partides totals: " + getTotalPartidas());
 
     }
 

@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Menu {
 
-    JocDaus jocDaus = new JocDaus();
 
     public void show() {
+
+        JocDaus jocDaus = new JocDaus();
 
         Scanner scanner = new Scanner(System.in);
         int sel = 0;
@@ -36,6 +37,11 @@ public class Menu {
 
                     break;
                 case 5:
+                    System.out.println("Gràcies per jugar!");
+                    System.out.println("## Estadísticas 3 daus ##");
+                    System.out.println("Partides totals: " + jocDaus.getTotalPartidas());
+                    System.out.println("Total guanyades: " + jocDaus.getTotalGanadas());
+                    System.out.println("Total perdudes: " + jocDaus.getTotalPerdidas());
             }
 
         }
